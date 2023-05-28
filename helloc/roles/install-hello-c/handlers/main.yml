@@ -1,0 +1,6 @@
+---
+# handlers file for install-hello-c
+- name: success
+  become: yes
+  debug:
+    msg: "This task has been executed successfully"

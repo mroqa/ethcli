@@ -1,0 +1,10 @@
+---
+
+- name: Deploy Hello C Program in remote instance
+  hosts: "{{svrname}}"
+  user: mroqa
+  become: yes
+  become_user: mroqa
+  gather_facts: yes
+  roles:
+    - install-hello-c

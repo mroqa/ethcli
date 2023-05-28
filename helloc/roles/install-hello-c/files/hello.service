@@ -1,0 +1,10 @@
+[Unit]
+Description=Hello C Program
+
+[Service]
+Type=simple
+ExecStart=/usr/local/bin/hello
+Restart=on-failure
+
+[Install]
+WantedBy=multi-user.target

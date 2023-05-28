@@ -1,0 +1,15 @@
+---
+# tasks file for install-hello-c
+
+- name: Copy compile file to remote server
+  copy:
+    src: hello
+    dest: /usr/local/bin
+    mode: 0755
+    owner: mroqa
+    group: mroqa
+
+- name: Run task successfully
+  shell: /usr/local/bin/hello
+  notify:
+    - success

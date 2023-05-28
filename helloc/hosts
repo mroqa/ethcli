@@ -1,0 +1,2 @@
+[servers]
+server01 ansible_host=192.168.8.134 ansible_user=mroqa ansible_ssh_pass=Pa$$w0rd
